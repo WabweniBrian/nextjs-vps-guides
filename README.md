@@ -381,8 +381,8 @@ If Certbot is unable to verify the domain, it could be due to access restriction
 2. **Set Proper Permissions:** You then ensured that the Nginx server (www-data user) has the right permissions to access the challenge directory.
 
 ```bash
-sudo chown -R www-data:www-data /var/www/printitug/public/.well-known
-sudo chmod -R 755 /var/www/printitug/public/.well-known
+sudo chown -R www-data:www-data /var/www/your-app/public/.well-known
+sudo chmod -R 755 /var/www/your-app/public/.well-known
 ```
 
 3. **Run Certbot to Obtain the SSL Certificate:** Once the above configurations are in place, you can now run the Certbot command to request an SSL certificate:
